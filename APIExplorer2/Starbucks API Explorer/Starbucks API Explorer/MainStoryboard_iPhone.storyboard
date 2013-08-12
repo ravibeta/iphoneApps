@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Starbucks API Explorer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv9-Fq-Art">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="Qys-8K-YV8"/>
+                                    <constraint firstAttribute="height" constant="40" id="uCQ-bV-aKI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCh-7L-yhd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="MBW-p4-fe6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Request Body" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCz-OU-GDE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5J4-sy-HYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7Y-uY-VlY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="68e-xn-Nma"/>
+                                    <constraint firstAttribute="height" constant="30" id="crV-bQ-jdf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Response" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHC-6h-PLe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KAh-O1-lrq"/>
+                                    <constraint firstAttribute="width" constant="77" id="nJC-x3-DMP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="flA-tc-TAN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="OS9-Do-b6n"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="GET"/>
+                                    <segment title="POST"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Adl-Ep-Tlf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="Oya-Qc-h9H"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Json"/>
+                                    <segment title="XML"/>
+                                </segments>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgx-Tt-hMv">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="k8v-QR-FQD"/>
+                                    <constraint firstAttribute="height" constant="225" id="zqL-XA-VWC"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Response will appear here">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFY-Ca-fL3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="wSo-vd-3VU"/>
+                                    <constraint firstAttribute="width" constant="74" id="xhe-p3-oud"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Submit:" destination="2" eventType="touchUpInside" id="qax-Oc-TMB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="flA-tc-TAN" firstAttribute="top" secondItem="Adl-Ep-Tlf" secondAttribute="top" type="default" id="7MD-Py-ORY"/>
+                            <constraint firstItem="MFY-Ca-fL3" firstAttribute="trailing" secondItem="M7Y-uY-VlY" secondAttribute="trailing" type="default" id="8Pa-I1-zey"/>
+                            <constraint firstItem="M7Y-uY-VlY" firstAttribute="trailing" secondItem="LCh-7L-yhd" secondAttribute="trailing" type="default" id="BiA-Ux-Bj6"/>
+                            <constraint firstItem="Adl-Ep-Tlf" firstAttribute="trailing" secondItem="LCh-7L-yhd" secondAttribute="trailing" type="default" id="Di1-nr-KWp"/>
+                            <constraint firstAttribute="bottom" secondItem="dgx-Tt-hMv" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="FRy-zT-ACP"/>
+                            <constraint firstItem="M7Y-uY-VlY" firstAttribute="top" secondItem="LCh-7L-yhd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="I6t-FG-ams"/>
+                            <constraint firstItem="flA-tc-TAN" firstAttribute="leading" secondItem="LCh-7L-yhd" secondAttribute="leading" type="default" id="Ihz-cD-7S4"/>
+                            <constraint firstItem="aCz-OU-GDE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="148" id="KLJ-Eb-Tya"/>
+                            <constraint firstItem="MFY-Ca-fL3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="177" id="OM8-B0-7CZ"/>
+                            <constraint firstItem="tHC-6h-PLe" firstAttribute="leading" secondItem="LCh-7L-yhd" secondAttribute="leading" type="default" id="Rke-FP-vpM"/>
+                            <constraint firstItem="LCh-7L-yhd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="106" id="TpM-nE-8rX"/>
+                            <constraint firstItem="flA-tc-TAN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="50" id="VUM-zv-mZH"/>
+                            <constraint firstItem="M7Y-uY-VlY" firstAttribute="leading" secondItem="aCz-OU-GDE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Wjp-5o-Wqr"/>
+                            <constraint firstItem="M7Y-uY-VlY" firstAttribute="baseline" secondItem="aCz-OU-GDE" secondAttribute="baseline" type="default" id="WmH-um-bTe"/>
+                            <constraint firstItem="flA-tc-TAN" firstAttribute="baseline" secondItem="LCh-7L-yhd" secondAttribute="baseline" type="default" id="aMc-2l-w8y"/>
+                            <constraint firstItem="dgx-Tt-hMv" firstAttribute="centerX" secondItem="LCh-7L-yhd" secondAttribute="centerX" type="default" id="c3A-rr-Axv"/>
+                            <constraint firstItem="nv9-Fq-Art" firstAttribute="top" secondItem="3" secondAttribute="top" constant="11" id="fhe-HW-REO"/>
+                            <constraint firstItem="MFY-Ca-fL3" firstAttribute="bottom" secondItem="tHC-6h-PLe" secondAttribute="bottom" type="default" id="iS8-lO-uNt"/>
+                            <constraint firstItem="LCh-7L-yhd" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="qAy-6s-1mY"/>
+                            <constraint firstItem="nv9-Fq-Art" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="sYP-Ls-iAO"/>
+                            <constraint firstItem="Adl-Ep-Tlf" firstAttribute="baseline" secondItem="flA-tc-TAN" secondAttribute="baseline" type="default" id="vym-Ld-72Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Params" destination="M7Y-uY-VlY" id="fHH-4e-rwI"/>
+                        <outlet property="ResourceLocator" destination="LCh-7L-yhd" id="JRb-Mc-1XB"/>
+                        <outlet property="ResponseViewer" destination="dgx-Tt-hMv" id="7s9-25-RgK"/>
+                        <outlet property="method" destination="flA-tc-TAN" id="Fne-Mw-lZG"/>
+                        <outlet property="outputType" destination="Adl-Ep-Tlf" id="aqu-Ou-7mU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="23"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Submit:"/>
+                <relationship kind="outlet" name="Params" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ResourceLocator" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ResponseViewer" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="method" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="outputType" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
